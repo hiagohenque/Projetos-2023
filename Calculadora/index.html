@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <p id="visor"></p>
+            <tr>
+                <td><button onclick="clean()">C</button></td>
+                <td><button onclick="del()"><</button></td>
+                <td><button onclick="visor('/')">/</button></td>
+                <td><button onclick="visor('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="visor('7')">7</button></td>
+                <td><button onclick="visor('8')">8</button></td>
+                <td><button onclick="visor('9')">9</button></td>
+                <td><button onclick="visor('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="visor('4')">4</button></td>
+                <td><button onclick="visor('5')">5</button></td>
+                <td><button onclick="visor('6')">6</button></td>
+                <td><button onclick="visor('+')">+</button></td>
+            </tr>
+             <tr>
+                <td><button onclick="visor('1')">1</button></td>
+                <td><button onclick="visor('2')">2</button></td>
+                <td><button onclick="visor('3')">3</button></td>
+                <td rowspan="2"><button id="equal" onclick="soma()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="zero" onclick="visor('0')">0</button></td>
+                <td><button onclick="visor('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
